@@ -1,7 +1,17 @@
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
+<h2 style="color:red" align="center">
+Please check your board version and set the right board in platformio. <br>
+For robin nano 1.2 select `robin_nano_35` for Robin nano 1.3 select `robin_nano_v1_3_f4`
 
+Also check your stepper drivers, some stepper drivers come with double steps. (so steps/mm will be half). If that is the case,
+please set `A_DOUBLE_STEPS` to false. 
+
+Also.. please checkout the right branch for your board version before building.
+
+Thanks in advance.
+</h2>
 <p align="center">
     <a href="/LICENSE"><img alt="GPL-V3.0 License" src="https://img.shields.io/github/license/marlinfirmware/marlin.svg"></a>
     <a href="https://github.com/MarlinFirmware/Marlin/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/marlinfirmware/marlin.svg"></a>
